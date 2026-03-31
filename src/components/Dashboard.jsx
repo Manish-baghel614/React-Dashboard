@@ -107,9 +107,11 @@ const Dashboard = () => {
 
 
 
-    const AIRTABLE_API_KEY = process.env.REACT_APP_PERSONAL_ACCESS_TOKEN;
-    const BASE_ID = process.env.REACT_APP_BASE_ID;
-    const TABLE_NAME = process.env.REACT_APP_TABLE_NAME;
+    const AIRTABLE_API_KEY = import.meta.env.PERSONAL_ACCESS_TOKEN;
+    const BASE_ID = import.meta.env.BASE_ID;
+    const TABLE_NAME = import.meta.env.TABLE_NAME;
+
+    
 
     
 

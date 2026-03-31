@@ -48,9 +48,9 @@ const SignUp = () => {
         
 
         //Airtable Api Details
-        const PERSONAL_ACCESS_TOKEN = process.env.REACT_APP_PERSONAL_ACCESS_TOKEN;
-        const BASE_ID = process.env.REACT_APP_BASE_ID;
-        const TABLE_NAME = process.env.REACT_APP_TABLE_NAME;
+        const PERSONAL_ACCESS_TOKEN = import.meta.env.PERSONAL_ACCESS_TOKEN;
+        const BASE_ID = import.meta.env.BASE_ID;
+        const TABLE_NAME = import.meta.env.TABLE_NAME;
         const URL = `https://api.airtable.com/v0/${BASE_ID}/${TABLE_NAME}`;
 
         console.log(URL);
